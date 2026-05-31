@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cortes de res perfectos · Guía apta para colon irritable</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.x/dist/tabler-icons.min.css">
+<style>
+  :root {
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #555;
+    --color-text-tertiary: #888;
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f5f5f5;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --color-border-secondary: rgba(0,0,0,0.25);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-primary: #f0f0f0;
+      --color-text-secondary: #aaa;
+      --color-text-tertiary: #777;
+      --color-background-primary: #1e1e1e;
+      --color-background-secondary: #2a2a2a;
+      --color-border-tertiary: rgba(255,255,255,0.1);
+      --color-border-secondary: rgba(255,255,255,0.2);
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .ig { max-width: 700px; }
+  .hero-hdr {
+    background: #2d6a4a;
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+    padding: 1.4rem 1.6rem 1.1rem;
+    text-align: center;
+  }
+  .hero-hdr h1 { color: #fff; font-size: 26px; font-weight: 600; letter-spacing: -0.5px; line-height: 1.2; }
+  .hero-hdr p { color: #a8d5bc; font-size: 13px; margin-top: 5px; }
+  .hero-sub {
+    background: #3a7d5a;
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    padding: 0.75rem 1.4rem;
+    margin-bottom: 14px;
+  }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.35); color: #fff; }
+  .sec-hdr {
+    padding: 0.55rem 1rem;
+    border-radius: var(--border-radius-md);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .sec-hdr.green { background: #d4f0e3; color: #1e5c3a; }
+  .sec-hdr.red { background: #fde8e8; color: #7a1c1c; }
+  .sec-hdr.blue { background: #ddeaf9; color: #1a4e8a; }
+  .sec-hdr.amber { background: #faeeda; color: #633806; }
+  .sec-hdr.gray { background: var(--color-background-secondary); color: var(--color-text-primary); border: 0.5px solid var(--color-border-secondary); }
+  .card { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-tertiary); padding: 0.9rem 1rem; margin-bottom: 10px; }
+  .card-white { background: var(--color-background-primary); border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-tertiary); padding: 0.9rem 1rem; margin-bottom: 10px; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+  .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+  .ing-row { display: flex; justify-content: space-between; align-items: baseline; padding: 5px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
+  .ing-row:last-child { border-bottom: none; }
+  .ing-name { color: var(--color-text-primary); }
+  .ing-qty { color: #2d6a4a; font-weight: 600; white-space: nowrap; margin-left: 10px; }
+  .step-row { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 6px; }
+  .step-num { width: 18px; height: 18px; border-radius: 50%; background: #2d6a4a; color: #fff; font-size: 10px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step-text { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+  .avoid-item { display: flex; gap: 8px; align-items: flex-start; padding: 5px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
+  .avoid-item:last-child { border-bottom: none; }
+  .avoid-x { color: #c0392b; font-size: 14px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+  .avoid-text { color: var(--color-text-secondary); }
+  .tip-box { background: #f0f9f4; border-radius: var(--border-radius-md); padding: 0.6rem 0.85rem; font-size: 12px; color: #1e5c3a; line-height: 1.55; margin-top: 6px; }
+  .warn-box { background: #fff5f5; border-radius: var(--border-radius-md); padding: 0.6rem 0.85rem; font-size: 12px; color: #7a1c1c; line-height: 1.55; margin-top: 10px; }
+  .note { font-size: 11px; color: var(--color-text-tertiary); font-style: italic; margin-top: 4px; margin-bottom: 10px; }
+  .cut-hdr { border-radius: var(--border-radius-md); padding: 0.5rem 0.9rem; font-size: 13px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+  .cut-hdr.lomito { background: #d4f0e3; color: #1e5c3a; }
+  .cut-hdr.ny { background: #ddeaf9; color: #1a4e8a; }
+  .cut-hdr.ribeye { background: #faeeda; color: #633806; }
+  .cut-pill { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 400; }
+  .cut-pill.lomito { background: #a8dfc5; color: #1e5c3a; }
+  .cut-pill.ny { background: #a8c8f0; color: #1a4e8a; }
+  .cut-pill.ribeye { background: #f5d89a; color: #633806; }
+  .method-block { margin-bottom: 6px; }
+  .method-label { font-size: 11px; font-weight: 600; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+  .method-val { font-size: 13px; color: var(--color-text-primary); }
+  .temp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+  .temp-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 0.6rem 0.5rem; text-align: center; }
+  .temp-val { font-size: 17px; font-weight: 600; color: #2d6a4a; margin: 2px 0; }
+  .temp-label { font-size: 11px; font-weight: 600; color: var(--color-text-primary); }
+  .temp-desc { font-size: 11px; color: var(--color-text-tertiary); }
+  .accomp-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-top: 8px; }
+  .accomp-item { text-align: center; }
+  .accomp-label { font-size: 11px; color: var(--color-text-secondary); line-height: 1.3; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 8px 0; }
+  .consejo { background: #2d6a4a; border-radius: var(--border-radius-lg); padding: 1rem 1.2rem; margin-top: 4px; }
+  .consejo p { font-size: 13px; color: #c5e8d6; line-height: 1.6; }
+  .consejo-hdr { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+  .footer { text-align: center; font-size: 11px; color: var(--color-text-tertiary); margin-top: 1.5rem; padding-top: 1rem; border-top: 0.5px solid var(--color-border-tertiary); }
+
+  @media (prefers-color-scheme: dark) {
+    .tip-box { background: #0e2d1d; color: #7dd4a8; }
+    .warn-box { background: #2d1010; color: #f4a0a0; }
+    .sec-hdr.green { background: #0e3d26; color: #7dd4a8; }
+    .sec-hdr.red { background: #3d1010; color: #f4a0a0; }
+    .sec-hdr.blue { background: #0d2d52; color: #8ab8f0; }
+    .sec-hdr.amber { background: #3d2000; color: #f0c070; }
+    .cut-hdr.lomito { background: #0e3d26; color: #7dd4a8; }
+    .cut-hdr.ny { background: #0d2d52; color: #8ab8f0; }
+    .cut-hdr.ribeye { background: #3d2000; color: #f0c070; }
+    .cut-pill.lomito { background: #1a5e42; color: #7dd4a8; }
+    .cut-pill.ny { background: #1a3a6e; color: #8ab8f0; }
+    .cut-pill.ribeye { background: #5a3000; color: #f0c070; }
+    .ing-qty { color: #6dbf94; }
+    .temp-val { color: #6dbf94; }
+    .consejo { background: #1a4a34; }
+    .consejo p { color: #7dd4a8; }
+  }
+  @media (max-width: 560px) {
+    .row2, .row3 { grid-template-columns: 1fr; }
+    .temp-grid { grid-template-columns: repeat(2, 1fr); }
+    .accomp-grid { grid-template-columns: repeat(3, 1fr); }
+    .hero-hdr h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+<div class="ig">
+
+  <div class="hero-hdr">
+    <h1>Cortes de res perfectos</h1>
+    <p>Lomito · New York · Ribeye &nbsp;·&nbsp; Parrilla y freidora de aire &nbsp;·&nbsp; Apto colon irritable</p>
+  </div>
+  <div class="hero-sub">
+    <div class="badges">
+      <span class="badge"><i class="ti ti-check"></i> Bajo FODMAP</span>
+      <span class="badge"><i class="ti ti-leaf"></i> Sin ajo ni cebolla</span>
+      <span class="badge"><i class="ti ti-ban"></i> Sin marinadas comerciales</span>
+    </div>
+  </div>
+
+  <div class="sec-hdr gray"><i class="ti ti-meat"></i> Comparación de cortes</div>
+  <div class="row3">
+    <div class="card-white">
+      <div class="cut-hdr lomito">Lomito <span class="cut-pill lomito">muy magro</span></div>
+      <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.6">El más tierno y magro. Mínima grasa, sabor suave. El más amigable con el SII. No necesita sazón agresiva.</div>
+      <div class="divider"></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-flame" style="font-size:11px"></i> Parrilla</div><div class="method-val">Fuego alto · 3–4 min/lado</div></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-wind" style="font-size:11px"></i> Air fryer</div><div class="method-val">200 °C · 8–10 min</div></div>
+      <div class="method-block"><div class="method-label">Porción sugerida</div><div class="method-val">300–400 g</div></div>
+    </div>
+    <div class="card-white">
+      <div class="cut-hdr ny">New York <span class="cut-pill ny">algo marmoleado</span></div>
+      <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.6">Faja de grasa en el borde, músculo magro. Sabor más intenso que el lomito. Muy bien tolerado en SII.</div>
+      <div class="divider"></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-flame" style="font-size:11px"></i> Parrilla</div><div class="method-val">Fuego alto · 4–5 min/lado</div></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-wind" style="font-size:11px"></i> Air fryer</div><div class="method-val">200 °C · 10–14 min</div></div>
+      <div class="method-block"><div class="method-label">Porción sugerida</div><div class="method-val">300–400 g</div></div>
+    </div>
+    <div class="card-white">
+      <div class="cut-hdr ribeye">Ribeye <span class="cut-pill ribeye">muy marmoleado</span></div>
+      <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.6">Alta grasa intramuscular. Sabor muy intenso. Tolerable en porciones moderadas — la grasa puede acelerar el tránsito.</div>
+      <div class="divider"></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-flame" style="font-size:11px"></i> Parrilla</div><div class="method-val">Fuego medio-alto · 4–5 min/lado</div></div>
+      <div class="method-block"><div class="method-label"><i class="ti ti-wind" style="font-size:11px"></i> Air fryer</div><div class="method-val">190 °C · 10–12 min</div></div>
+      <div class="method-block"><div class="method-label">Porción sugerida</div><div class="method-val">200–250 g</div></div>
+    </div>
+  </div>
+
+  <div class="sec-hdr green"><i class="ti ti-salad"></i> 1. Sazonado · para ~300–400 g (ajustar proporcionalmente para el ribeye)</div>
+  <div class="row2">
+    <div class="card-white">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px">Opción A — con aceite de ajo <span style="font-size:11px;font-weight:400;color:var(--color-text-tertiary)">(lomito y New York)</span></div>
+      <div class="ing-row"><span class="ing-name">Aceite de oliva infusionado con ajo</span><span class="ing-qty">1½ cdas</span></div>
+      <div class="ing-row"><span class="ing-name">Sal marina o kosher</span><span class="ing-qty">¾ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Pimienta negra molida</span><span class="ing-qty">½ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Romero fresco picado</span><span class="ing-qty">1 cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Jugo de limón fresco</span><span class="ing-qty">1 cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Cebollín verde picado (al servir)</span><span class="ing-qty">1 cda</span></div>
+      <div class="tip-box"><i class="ti ti-info-circle" style="font-size:13px"></i> Los fructanos del ajo no migran al aceite. Todo el sabor, sin FODMAPs.</div>
+    </div>
+    <div class="card-white">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px">Opción B — dry rub sin ajo <span style="font-size:11px;font-weight:400;color:var(--color-text-tertiary)">(los tres cortes)</span></div>
+      <div class="ing-row"><span class="ing-name">Aceite de oliva extra virgen</span><span class="ing-qty">1½ cdas</span></div>
+      <div class="ing-row"><span class="ing-name">Mostaza Dijon (frotar primero)</span><span class="ing-qty">1 cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Sal marina o kosher</span><span class="ing-qty">¾ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Pimienta negra molida</span><span class="ing-qty">½ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Pimentón ahumado (paprika)</span><span class="ing-qty">1 cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Tomillo seco</span><span class="ing-qty">½ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Comino molido (opcional)</span><span class="ing-qty">¼ cdta</span></div>
+      <div class="ing-row"><span class="ing-name">Jugo de limón (al servir)</span><span class="ing-qty">1 cdta</span></div>
+      <div class="tip-box"><i class="ti ti-info-circle" style="font-size:13px"></i> Para el ribeye, solo sal gruesa + pimienta ya es suficiente — su grasa hace el trabajo de sabor.</div>
+    </div>
+  </div>
+  <p class="note">cdta = cucharadita (5 ml) · cda = cucharada (15 ml)</p>
+
+  <div class="sec-hdr amber"><i class="ti ti-flame"></i> 2. Técnica de cocción — aplica a los tres cortes</div>
+  <div class="row2">
+    <div class="card-white">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px"><i class="ti ti-flame" style="font-size:14px"></i> Parrilla</div>
+      <div class="step-row"><div class="step-num">1</div><div class="step-text">Sacar del refrigerador 30 min antes.</div></div>
+      <div class="step-row"><div class="step-num">2</div><div class="step-text">Aplicar sazonado, reposar 30–45 min.</div></div>
+      <div class="step-row"><div class="step-num">3</div><div class="step-text">Parrilla bien caliente para sellar rápido.</div></div>
+      <div class="step-row"><div class="step-num">4</div><div class="step-text">No pinchar — usar pinzas, no tenedor.</div></div>
+      <div class="step-row"><div class="step-num">5</div><div class="step-text">Reposar 5–7 min cubierto antes de cortar.</div></div>
+      <div class="step-row"><div class="step-num">6</div><div class="step-text">Cortar en contra de la fibra.</div></div>
+      <div class="tip-box">Ribeye: fuego medio-alto (no máximo) para que la grasa se funda sin quemar el exterior.</div>
+    </div>
+    <div class="card-white">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px"><i class="ti ti-wind" style="font-size:14px"></i> Freidora de aire</div>
+      <div class="step-row"><div class="step-num">1</div><div class="step-text">Sacar del refrigerador 30 min antes.</div></div>
+      <div class="step-row"><div class="step-num">2</div><div class="step-text">Usar dry rub seco — mejor que líquidos.</div></div>
+      <div class="step-row"><div class="step-num">3</div><div class="step-text">Precalentar (200 °C lomito/NY · 190 °C ribeye).</div></div>
+      <div class="step-row"><div class="step-num">4</div><div class="step-text">Voltear a la mitad del tiempo.</div></div>
+      <div class="step-row"><div class="step-num">5</div><div class="step-text">No abrir la canasta constantemente.</div></div>
+      <div class="step-row"><div class="step-num">6</div><div class="step-text">2 min extra al final si se quiere más dorado.</div></div>
+      <div class="tip-box">Ribeye: escurrir el exceso de grasa fundida antes de servir — mejor tolerancia sin perder sabor.</div>
+    </div>
+  </div>
+
+  <div class="sec-hdr gray"><i class="ti ti-temperature"></i> Temperatura interna (aplica igual a los tres cortes)</div>
+  <div class="temp-grid">
+    <div class="temp-card">
+      <div class="temp-label">Término rojo</div>
+      <div class="temp-val">52–54°</div>
+      <div class="temp-desc">Centro rojo, muy jugoso</div>
+    </div>
+    <div class="temp-card">
+      <div class="temp-label">Término medio</div>
+      <div class="temp-val">55–60°</div>
+      <div class="temp-desc">Rosado, jugoso</div>
+    </div>
+    <div class="temp-card">
+      <div class="temp-label">Tres cuartos</div>
+      <div class="temp-val">60–65°</div>
+      <div class="temp-desc">Poco rosado</div>
+    </div>
+    <div class="temp-card">
+      <div class="temp-label">Bien cocido</div>
+      <div class="temp-val">&gt;65°</div>
+      <div class="temp-desc">Sin rosado, más seco</div>
+    </div>
+  </div>
+
+  <div class="sec-hdr red"><i class="ti ti-ban"></i> Evitar — alto FODMAP o irritante</div>
+  <div class="card">
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Ajo crudo o en polvo</strong> — alto en fructanos. Sustituir con aceite infusionado.</span></div>
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Cebolla (todas las formas)</strong> — solo la parte verde del cebollín al servir.</span></div>
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Marinadas comerciales</strong> — suelen tener ajo, cebolla, miel o JMAF.</span></div>
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Mucho chile picante</strong> — puede irritar el sistema digestivo.</span></div>
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Partes muy carbonizadas</strong> — especialmente importante con el ribeye por su mayor contenido graso.</span></div>
+    <div class="avoid-item"><span class="avoid-x">✕</span><span class="avoid-text"><strong>Ribeye en porción grande</strong> — la grasa en exceso puede acelerar el tránsito intestinal.</span></div>
+  </div>
+
+  <div class="sec-hdr green"><i class="ti ti-carrot"></i> Acompañamientos amigables con el colon irritable</div>
+  <div class="card">
+    <div style="font-size:12px;color:var(--color-text-tertiary);margin-bottom:6px">Suaves, cocidos y fáciles de digerir</div>
+    <div class="accomp-grid">
+      <div class="accomp-item"><span style="font-size:24px;display:block;margin-bottom:3px">🥔</span><span class="accomp-label">Papa asada</span></div>
+      <div class="accomp-item"><span style="font-size:24px;display:block;margin-bottom:3px">🥕</span><span class="accomp-label">Zanahoria cocida</span></div>
+      <div class="accomp-item"><span style="font-size:24px;display:block;margin-bottom:3px">🍚</span><span class="accomp-label">Arroz blanco</span></div>
+      <div class="accomp-item"><span style="font-size:24px;display:block;margin-bottom:3px">🥒</span><span class="accomp-label">Chayote cocido</span></div>
+      <div class="accomp-item"><span style="font-size:24px;display:block;margin-bottom:3px">🎃</span><span class="accomp-label">Ayote cocido</span></div>
+    </div>
+    <div class="warn-box"><strong>Evitar (mientras el intestino esté sensible):</strong> salsas con ajo o cebolla · papas fritas muy grasosas · ensaladas grandes de vegetales crudos · salsas picantes</div>
+  </div>
+
+  <div class="consejo">
+    <div class="consejo-hdr"><i class="ti ti-bulb" style="font-size:16px"></i> Consejo final</div>
+    <p>Los tres son excelentes cortes. El lomito y el New York son los más seguros para el SII. El ribeye es un placer ocasional — con porción moderada (200–250 g) y sin excederse en la grasa, la mayoría lo tolera bien. En todos los casos, la clave está en el sazonado simple y la técnica, no en la cantidad de ingredientes.</p>
+  </div>
+
+  <div class="footer">
+    Guía de referencia · Elaborada con Claude · Para consultas médicas específicas, siempre acudir a tu nutricionista.
+  </div>
+
+</div>
+</div>
+</body>
+</html>
